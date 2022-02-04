@@ -1,0 +1,100 @@
+body {
+  font-family: "Outfit", sans-serif;
+}
+.header {
+  padding: 40px 60px !important;
+}
+.login .link-login {
+  text-decoration: none;
+}
+.login .btn-outline-primary {
+  padding: 5px 28px;
+  width: 120px !important;
+  height: 40px !important;
+  border-radius: 7.86px;
+  font-weight: 700;
+}
+main .faq-img img {
+  max-width: 550px !important;
+  width: 100%;
+}
+.main {
+  padding: 40px 60px !important;
+}
+.main .the-faq {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 83.69%;
+  color: #488ce0;
+}
+.main .pusat-bantuan {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 83.69%;
+  color: #000000;
+}
+.main .detail {
+  margin-top: 10px;
+  font-size: 21px;
+  line-height: 150%;
+}
+
+/* Accordion  */
+.accordion-button {
+  font-weight: 700 !important;
+  font-size: 32px;
+  line-height: 120%;
+  /* or 38px */
+  background-color: #e3f0ff !important;
+  display: flex;
+  align-items: center;
+}
+.accordion-button .no {
+  margin-right: 30px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 120%;
+  color: #a4a4a4 !important;
+}
+.accordion-button .title-faq {
+  margin: 0 !important;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 120% !important;
+
+  color: #212529;
+}
+.accordion-body {
+  color: #5a5365;
+
+  background-color: #f1f8ff !important;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #488ce0 !important;
+}
+footer h5 b {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+}
+footer .text-reset {
+  text-decoration: none;
+}
+footer .desc {
+  text-align: justify !important;
+  line-height: 30px;
+}
+footer .head {
+  letter-spacing: 1px;
+}
+/* Responsive Mobile */
+@media all and (max-width: 991px) {
+  .main .row {
+    flex-direction: column-reverse;
+  }
+}

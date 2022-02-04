@@ -133,6 +133,7 @@ tr#file td{
     width: 100%;
     justify-content: flex-end;
     margin-bottom: 114px;
+    padding: 0 200px;
 }
 
 .container a{

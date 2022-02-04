@@ -7,7 +7,7 @@
     <link rel="icon" href="../img/logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link rel="stylesheet" href="/css/user/utility.css">
@@ -20,17 +20,10 @@
         <div id="nav-elements" class="row justify-between">
             <img src="/img/logo.png" alt="" id="logo">
             <div class="group row align-center">
-                <div class="group row align-center">
-                    <span class="material-icons-outlined" id="language">
-                        language
-                    </span>
-                    <p id="language-options">
-                        <span id="ID"> ID </span>
-                        |
-                        <span id="EN"> EN </span>
-                    </p>
-                </div>
-                <div id="login"> LOGIN </div>
+                <a href="/signin" id="login">
+                    <span style="font-size:16px;"><b>ADMIN</b></span> <br>
+                    Klik disini
+                </a>
             </div>
         </div>
     </nav>
@@ -46,10 +39,14 @@
                     search
                 </span>
                 <input type="text" name="title" placeholder="Cari Judul Disini..">
-                <span id="filter-button" class="material-icons-outlined" style="color: #488CE0;">
-                    filter_alt
-                </span>
-                <button type="button">TEMUKAN</button>
+                <a href="#main-content" class="col center" style="text-decoration:none;">
+                    <span id="filter-button" class="material-icons-outlined" style="color: #488CE0;">
+                        filter_alt
+                    </span>
+                </a>
+                <a href="#main-content">
+                    <button type="button">TEMUKAN</button>
+                </a>
             </div>
         </header>
         
@@ -59,11 +56,10 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/WQ2V1rG4X_c?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div id="content" class="col">
-                    <h1>LOREM IPSUM
-                        DOLOR SIT</h1>
-                    <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                    <h1>PERPUSTAKAAN DIGITAL</h1>
+                    <p>Kini RSUD Siti Fatimah Prov. Sumatera Selatan berinovasi melewati platform layanan perpustakaan digital ini untuk mewujudkan misi rumah sakit menjadi rumah sakit pendidikan. Penasaran lebih lanjut mengenai RSUD Siti Fatimah, yuk simak kelanjutannya di sebelah!</p>
                 </div>
-                <div id="vector"></div>
+                <img src="/img/background-curve.svg" alt="" id="vector">
             </div>
             <div id="filter" class="col">
                 <div class="row align-center" id="filter-header">
@@ -135,7 +131,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card col">
+                    <div class="card col" id="subjects">
                         <h2>Subjek Karya Tulis Ilmiah</h2>
                         <?php foreach($subject as $sub) : ?>
                             <div class="row">
@@ -156,7 +152,7 @@
                     <p>Urutkan Berdasarkan : </p>
                     <div class="wrapper">
                         <select name="" id="abjad">
-                            <option value="ascending">Alphabet : </option>
+                            <option value="-">Alphabet</option>
                             <option value="ascending">A - Z</option>
                             <option value="descending">Z - A</option>
                         </select>
@@ -168,7 +164,7 @@
                     </div>
                     <div class="wrapper">
                         <select name="" id="tahun-terbit">
-                            <option value="-">Waktu : </option>
+                            <option value="-">Waktu</option>
                             <option value="terbaru">Terbaru</option>
                             <option value="terlama">Terlama</option>
                         </select>
@@ -180,7 +176,7 @@
                     </div>
                     <div class="wrapper">
                         <select name="" id="popularitas">
-                            <option value="">Popularitas : </option>
+                            <option value="-">Popularitas</option>
                             <option value="paling populer">Paling Populer</option>
                         </select>
                         <label class="arrow-wrapper row align-center" for="popularitas">
@@ -221,16 +217,16 @@
     </form>
         
     <footer class="row center">
-        <div id="whatsapp">
-            <span class="material-icons-outlined">
-                whatsapp
-            </span>
-        </div>
+            <a href="http://wa.me/08117117929" id="whatsapp" target="_blank">
+                <span class="material-icons-outlined">
+                    whatsapp
+                </span>
+            </a>
         <div class="group row">
             <div id="about">
                 <h1>Apa itu SIFALIB?</h1>
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                    <b>SIFALIB</b> merupakan laman yang menyediakan dokumen penelitian secara digital baik yang dilakukan oleh RSUD Siti Fatimah maupun penelitian yang dilakukan oleh pihak eksternal di RSUD Siti Fatimah.
                 </p>
             </div>
             <div id="navigation">
@@ -242,7 +238,7 @@
                     <a href="">
                         <li>Tentang Kami</li>
                     </a>
-                    <a href="">
+                    <a href="/faq">
                         <li>FAQ</li>
                     </a>
                 </ul>
@@ -254,27 +250,40 @@
                         <li class="row">
                             <span class="material-icons-round">
                                 call
-                                </span> 0811 7117 929
+                            </span> 
+                            <p>
+                                0811 7117 929
+                            </p>
                         </li>
                     </a>
                     <a href="">
                         <li class="row">
                             <span class="material-icons-round">
                                 mail
-                                </span> diklatrsudsitifatimah@gmail.com
+                            </span>
+                            <p>
+                                diklatrsudsitifatimah@gmail.com
+                            </p>
                         </li>
                     </a>
                     <a href="">
                         <li class="row">
                             <span class="material-icons-round">
                                 location_on
-                                </span> Jl. Kolonel H. Burlian, Suka Bangun, Sukarami, Kota Palembang, Sumatera Selatan 30151
+                                </span>
+                                <p>
+                                Jl. Kolonel H. Burlian, Suka Bangun, Sukarami, Kota Palembang, Sumatera Selatan 30151
+                                </p>
                         </li>
                     </a>
                 </ul>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+	    var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
     <script src="/js/main.js"></script>
 </body>
 </html>

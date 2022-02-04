@@ -42,6 +42,8 @@ $routes->get('/', 'HomeController::index');
 $routes->post('/sifalibsearch', 'LibraryController::search');
 //detail search
 $routes->get('/publication-detail/(:any)', 'LibraryController::show/$1');
+//FAQ
+$routes->get('/faq', 'HomeController::faq');
 //signin admin
 $routes->get('/signin', 'SigninController::index');
 //dashboard admin

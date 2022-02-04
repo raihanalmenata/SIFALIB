@@ -71,7 +71,7 @@
                 </tr>
                 <tr id="year">
                     <th class="row justify-between">
-                        <p class="value">Tahun Terbit</p>
+                        <p class="value">Tahun <br> Terbit</p>
                         <p>:</p>
                     </th>
                     <td>

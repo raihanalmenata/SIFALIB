@@ -17,4 +17,9 @@ class HomeController extends BaseController
         ];
         return view('main', $data);
     }
+
+    public function faq()
+    {
+        return view('faq');
+    }
 }

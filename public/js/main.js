@@ -140,17 +140,14 @@ function hide( component ){
 
 function sortByName(){
     const sortInput = document.getElementById('abjad');
-    const sortAscending = sortInput.value == 'ascending';
 
-    console.log("Order Ascending : " + sortAscending);
-
-    if(sortAscending)
+    if(sortInput.value == 'ascending')
     currentResults.sort();
-    else
+    else if(sortInput.value == 'descending')
     currentResults.reverse();
 
     populateResults(currentResults);
-    console.log(JSON.stringify(currentResults));
+    resetSortOption();
 }
 
 function sortByYear(){
@@ -169,6 +166,7 @@ function sortByYear(){
     })
 
     populateResults(currentResults);
+    resetSortOption();
 }
 
 function sortByPopularity(){
@@ -180,10 +178,22 @@ function sortByPopularity(){
         });
 
         populateResults(currentResults);
+        resetSortOption();
     }
 
 }
 
+function resetSortOption(){
+
+    const alphabetSort = document.getElementById('abjad');
+    const timeSort = document.getElementById('tahun-terbit');
+    const popularitySort = document.getElementById('popularitas');
+
+    alphabetSort.value = '-';
+    timeSort.value = '-';
+    popularitySort.value = '-';
+
+}
 const resetRadio = document.getElementById('-');
 resetRadio.addEventListener('click', resetAllYearInputs);
 
@@ -225,3 +235,4 @@ sortByYearInput.addEventListener('change', sortByYear);
 
 const sortByPopularityInput = document.getElementById('popularitas');
 sortByPopularityInput.addEventListener('change', sortByPopularity);
+
