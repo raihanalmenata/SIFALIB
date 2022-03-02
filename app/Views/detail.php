@@ -19,6 +19,11 @@
 <body class="col justify-between align-center">
     <nav class="row justify-center">
         <div id="nav-elements" class="row justify-between">
+            <h1>
+                <b>SIFA</b>
+                <br>
+                <p>Digital Library</p>
+            </h1>
             <img src="../img/logo.png" alt="" id="logo">
             <div class="group row align-center">
                 <div class="group row align-center">
@@ -130,18 +135,16 @@
     </main>
 
     <footer class="row center">
-        <div id="whatsapp">
-            <span class="material-icons-outlined">
-                whatsapp
-            </span>
-        </div>
+            <a href="http://wa.me/08117117929" id="whatsapp" target="_blank">
+                <span class="material-icons-outlined">
+                    whatsapp
+                </span>
+            </a>
         <div class="group row">
             <div id="about">
                 <h1>Apa itu SIFALIB?</h1>
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries.
+                    <b>SIFALIB</b> merupakan laman yang menyediakan dokumen penelitian secara digital baik yang dilakukan oleh RSUD Siti Fatimah maupun penelitian yang dilakukan oleh pihak eksternal di RSUD Siti Fatimah.
                 </p>
             </div>
             <div id="navigation">
@@ -153,7 +156,7 @@
                     <a href="">
                         <li>Tentang Kami</li>
                     </a>
-                    <a href="">
+                    <a href="/faq">
                         <li>FAQ</li>
                     </a>
                 </ul>
@@ -165,22 +168,30 @@
                         <li class="row">
                             <span class="material-icons-round">
                                 call
-                            </span> 0811 7117 929
+                            </span> 
+                            <p>
+                                0811 7117 929
+                            </p>
                         </li>
                     </a>
                     <a href="">
                         <li class="row">
                             <span class="material-icons-round">
                                 mail
-                            </span> diklatrsudsitifatimah@gmail.com
+                            </span>
+                            <p>
+                                diklatrsudsitifatimah@gmail.com
+                            </p>
                         </li>
                     </a>
                     <a href="">
                         <li class="row">
                             <span class="material-icons-round">
                                 location_on
-                            </span> Jl. Kolonel H. Burlian, Suka Bangun, Sukarami, Kota Palembang, Sumatera Selatan
-                            30151
+                                </span>
+                                <p>
+                                Jl. Kolonel H. Burlian, Suka Bangun, Sukarami, Kota Palembang, Sumatera Selatan 30151
+                                </p>
                         </li>
                     </a>
                 </ul>
